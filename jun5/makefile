@@ -1,8 +1,9 @@
 CC=gcc
 CFLAGS=-Wall -Werror -g3
+OUT=data_types.out
 
-arrays.out: arrays.c
+$(OUT): data_types.c
 	$(CC) $(CFLAGS) $^ -o $@
 
 clean:
-	rm -rf arrays.out
+	rm -rf $(OUT)
